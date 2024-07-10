@@ -1,0 +1,2 @@
+import { TriggerStrategy } from '@activepieces/pieces-framework';
+export declare const stripeNewSubscription: import("@activepieces/pieces-framework").ITrigger<TriggerStrategy.WEBHOOK, import("@activepieces/pieces-framework").SecretTextProperty<true>, {}> | import("@activepieces/pieces-framework").ITrigger<TriggerStrategy.POLLING, import("@activepieces/pieces-framework").SecretTextProperty<true>, {}> | import("@activepieces/pieces-framework").ITrigger<TriggerStrategy.APP_WEBHOOK, import("@activepieces/pieces-framework").SecretTextProperty<true>, {}>;

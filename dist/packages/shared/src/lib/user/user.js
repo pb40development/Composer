@@ -1,0 +1,35 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserMeta = exports.User = exports.PasswordType = exports.EmailType = exports.UserStatus = exports.PlatformRole = void 0;
+const typebox_1 = require("@sinclair/typebox");
+const base_model_1 = require("../common/base-model");
+const id_generator_1 = require("../common/id-generator");
+var PlatformRole;
+(function (PlatformRole) {
+    PlatformRole["ADMIN"] = "ADMIN";
+    PlatformRole["MEMBER"] = "MEMBER";
+})(PlatformRole || (exports.PlatformRole = PlatformRole = {}));
+var UserStatus;
+(function (UserStatus) {
+    /* user is active */
+    UserStatus["ACTIVE"] = "ACTIVE";
+    /* user account deactivated */
+    UserStatus["INACTIVE"] = "INACTIVE";
+})(UserStatus || (exports.UserStatus = UserStatus = {}));
+exports.EmailType = typebox_1.Type.String({
+    format: 'email',
+});
+exports.PasswordType = typebox_1.Type.String({
+    minLength: 8,
+    maxLength: 64,
+});
+exports.User = typebox_1.Type.Object(Object.assign(Object.assign({}, base_model_1.BaseModelSchema), { email: typebox_1.Type.String(), firstName: typebox_1.Type.String(), lastName: typebox_1.Type.String(), trackEvents: typebox_1.Type.Boolean(), newsLetter: typebox_1.Type.Boolean(), password: typebox_1.Type.String(), verified: typebox_1.Type.Boolean(), platformRole: typebox_1.Type.Enum(PlatformRole), status: typebox_1.Type.Enum(UserStatus), externalId: typebox_1.Type.Optional(typebox_1.Type.String()), platformId: typebox_1.Type.Union([id_generator_1.ApId, typebox_1.Type.Null()]) }));
+exports.UserMeta = typebox_1.Type.Object({
+    id: typebox_1.Type.String(),
+    email: typebox_1.Type.String(),
+    firstName: typebox_1.Type.String(),
+    platformId: typebox_1.Type.Union([id_generator_1.ApId, typebox_1.Type.Null()]),
+    platformRole: typebox_1.Type.Enum(PlatformRole),
+    lastName: typebox_1.Type.String(),
+});
+//# sourceMappingURL=user.js.map

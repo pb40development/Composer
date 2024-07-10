@@ -1,0 +1,18 @@
+{
+  "name": "@activepieces/piece-mysql",
+  "version": "0.1.6",
+  "dependencies": {
+    "@sinclair/typebox": "0.26.8",
+    "axios": "1.6.7",
+    "dayjs": "1.11.9",
+    "is-base64": "1.1.0",
+    "nanoid": "3.3.6",
+    "promise-mysql": "5.2.0",
+    "semver": "7.6.0",
+    "sqlstring": "2.3.3",
+    "@activepieces/shared": "0.10.111",
+    "tslib": "1.14.1"
+  },
+  "main": "./src/index.js",
+  "type": "commonjs"
+}

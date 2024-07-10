@@ -1,0 +1,18 @@
+{
+  "name": "@activepieces/piece-google-tasks",
+  "version": "0.3.6",
+  "dependencies": {
+    "@sinclair/typebox": "0.26.8",
+    "axios": "1.6.7",
+    "dayjs": "1.11.9",
+    "is-base64": "1.1.0",
+    "nanoid": "3.3.6",
+    "semver": "7.6.0",
+    "@activepieces/pieces-common": "0.2.15",
+    "@activepieces/pieces-framework": "0.7.32",
+    "@activepieces/shared": "0.10.111",
+    "tslib": "1.14.1"
+  },
+  "main": "./src/index.js",
+  "type": "commonjs"
+}

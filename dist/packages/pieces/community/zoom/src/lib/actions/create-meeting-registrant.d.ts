@@ -1,0 +1,20 @@
+export declare const zoomCreateMeetingRegistrant: import("@activepieces/pieces-framework").IAction<import("@activepieces/pieces-framework").OAuth2Property<import("@activepieces/pieces-framework").OAuth2Props>, {
+    meeting_id: import("@activepieces/pieces-framework").ShortTextProperty<true>;
+    first_name: import("@activepieces/pieces-framework").ShortTextProperty<true>;
+    last_name: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    email: import("@activepieces/pieces-framework").ShortTextProperty<true>;
+    address: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    city: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    state: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    zip: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    country: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    phone: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    comments: import("@activepieces/pieces-framework").LongTextProperty<false>;
+    custom_questions: import("@activepieces/pieces-framework").ObjectProperty<false>;
+    industry: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    job_title: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    no_of_employees: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    org: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    purchasing_time_frame: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+    role_in_purchase_process: import("@activepieces/pieces-framework").ShortTextProperty<false>;
+}>;

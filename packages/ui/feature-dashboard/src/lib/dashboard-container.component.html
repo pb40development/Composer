@@ -1,0 +1,26 @@
+<mat-sidenav-container class="ap-h-full ">
+    <mat-sidenav mode="side" [opened]="showSidnav$ | async">
+        <app-sidenav-routes-list></app-sidenav-routes-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="thin-scrollbars ">
+        <div *ngIf="(isEmbedded$ | async) === undefined || (isEmbedded$ | async) === false"
+            class="ap-absolute ap-z-50  ap-w-full ap-border-b ap-bg-white">
+            <div class="ap-flex ap-items-center  ap-py-5 ap-px-2 sm:ap-px-[1.875rem]">
+                    <div class="ap-typography-headline-5 !ap-font-semibold" 
+                    i18n>Composer</div>
+                    <app-invite-user-button></app-invite-user-button>   
+                    <div class="ap-flex-grow"></div>  
+                <div class="ap-flex ap-gap-2">
+                </div>
+                <div class="ap-flex ap-mx-3 ">
+                    <app-tasks-progress></app-tasks-progress>
+                </div>
+                <ap-user-avatar class="ap-ml-[20px]"></ap-user-avatar>
+            </div>
+        </div>
+        <div class="ap-h-full"
+            [class.ap-pt-7.5]="((isEmbedded$ | async) === undefined || (isEmbedded$ | async) === false)">
+            <router-outlet></router-outlet>           
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,34 @@
+import { Static } from '@sinclair/typebox';
+export declare const CreateTrialLicenseKeyRequestBody: import("@sinclair/typebox").TObject<{
+    email: import("@sinclair/typebox").TString<string>;
+    fullName: import("@sinclair/typebox").TString<string>;
+    companyName: import("@sinclair/typebox").TString<string>;
+    goal: import("@sinclair/typebox").TString<string>;
+    numberOfEmployees: import("@sinclair/typebox").TString<string>;
+}>;
+export type CreateTrialLicenseKeyRequestBody = Static<typeof CreateTrialLicenseKeyRequestBody>;
+export declare const LicenseKeyEntity: import("@sinclair/typebox").TObject<{
+    id: import("@sinclair/typebox").TString<string>;
+    email: import("@sinclair/typebox").TString<string>;
+    expiresAt: import("@sinclair/typebox").TString<string>;
+    activatedAt: import("@sinclair/typebox").TString<string>;
+    createdAt: import("@sinclair/typebox").TString<string>;
+    isTrial: import("@sinclair/typebox").TBoolean;
+    key: import("@sinclair/typebox").TString<string>;
+    ssoEnabled: import("@sinclair/typebox").TBoolean;
+    gitSyncEnabled: import("@sinclair/typebox").TBoolean;
+    showPoweredBy: import("@sinclair/typebox").TBoolean;
+    embeddingEnabled: import("@sinclair/typebox").TBoolean;
+    auditLogEnabled: import("@sinclair/typebox").TBoolean;
+    customAppearanceEnabled: import("@sinclair/typebox").TBoolean;
+    manageProjectsEnabled: import("@sinclair/typebox").TBoolean;
+    managePiecesEnabled: import("@sinclair/typebox").TBoolean;
+    manageTemplatesEnabled: import("@sinclair/typebox").TBoolean;
+    apiKeysEnabled: import("@sinclair/typebox").TBoolean;
+    customDomainsEnabled: import("@sinclair/typebox").TBoolean;
+    projectRolesEnabled: import("@sinclair/typebox").TBoolean;
+    flowIssuesEnabled: import("@sinclair/typebox").TBoolean;
+    alertsEnabled: import("@sinclair/typebox").TBoolean;
+    premiumPieces: import("@sinclair/typebox").TArray<import("@sinclair/typebox").TString<string>>;
+}>;
+export type LicenseKeyEntity = Static<typeof LicenseKeyEntity>;

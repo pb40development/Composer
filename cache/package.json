@@ -1,0 +1,17 @@
+{
+  "name": "cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@activepieces/piece-file-helper-0.0.7": "npm:@activepieces/piece-file-helper@0.0.7",
+    "@activepieces/piece-schedule-0.1.5": "npm:@activepieces/piece-schedule@0.1.5",
+    "@activepieces/piece-webhook-0.1.5": "npm:@activepieces/piece-webhook@0.1.5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@activepieces/shared",
+  "version": "0.10.111",
+  "type": "commonjs",
+  "dependencies": {
+    "@sinclair/typebox": "0.26.8",
+    "nanoid": "3.3.6",
+    "semver": "7.6.0",
+    "tslib": "1.14.1"
+  },
+  "main": "./src/index.js"
+}

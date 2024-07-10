@@ -1,0 +1,17 @@
+{
+  "name": "@activepieces/piece-csv",
+  "version": "0.4.0",
+  "dependencies": {
+    "@sinclair/typebox": "0.26.8",
+    "axios": "1.6.7",
+    "dayjs": "1.11.9",
+    "is-base64": "1.1.0",
+    "nanoid": "3.3.6",
+    "safe-flat": "2.1.0",
+    "semver": "7.6.0",
+    "@activepieces/shared": "0.10.111",
+    "tslib": "1.14.1"
+  },
+  "main": "./src/index.js",
+  "type": "commonjs"
+}

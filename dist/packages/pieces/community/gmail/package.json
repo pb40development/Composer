@@ -1,0 +1,23 @@
+{
+  "name": "@activepieces/piece-gmail",
+  "version": "0.6.1",
+  "dependencies": {
+    "@sinclair/typebox": "0.26.8",
+    "axios": "1.6.7",
+    "dayjs": "1.11.9",
+    "googleapis": "129.0.0",
+    "googleapis-common": "7.2.0",
+    "is-base64": "1.1.0",
+    "mailparser": "3.6.7",
+    "mime-types": "2.1.35",
+    "nanoid": "3.3.6",
+    "nodemailer": "6.9.9",
+    "semver": "7.6.0",
+    "@activepieces/pieces-common": "link:/Users/essam/Downloads/activepieces-main/dist/packages/pieces/community/common",
+    "@activepieces/pieces-framework": "link:/Users/essam/Downloads/activepieces-main/dist/packages/pieces/community/framework",
+    "@activepieces/shared": "link:/Users/essam/Downloads/activepieces-main/dist/packages/shared",
+    "tslib": "1.14.1"
+  },
+  "main": "./src/index.js",
+  "type": "commonjs"
+}
